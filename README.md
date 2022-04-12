@@ -1,2 +1,1 @@
-# AndroidAppMovie
-Study on Android Movie Projet
+Moviefy - Android App 
