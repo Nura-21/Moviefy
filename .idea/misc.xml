@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/KBTU/4Sim/ADEV/Projects/AndroidAppMovie/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2595" />
+        <entry key="..\:/KBTU/4Sim/ADEV/Projects/AndroidAppMovie/app/src/main/res/drawable/delete.xml" value="0.2595" />
+        <entry key="..\:/KBTU/4Sim/ADEV/Projects/AndroidAppMovie/app/src/main/res/drawable/fav.xml" value="0.2595" />
+        <entry key="..\:/KBTU/4Sim/ADEV/Projects/AndroidAppMovie/app/src/main/res/drawable/faved.xml" value="0.1375" />
+        <entry key="..\:/KBTU/4Sim/ADEV/Projects/AndroidAppMovie/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/KBTU/4Sim/ADEV/Projects/AndroidAppMovie/app/src/main/res/layout/activity_movie_details.xml" value="0.264" />
+        <entry key="..\:/KBTU/4Sim/ADEV/Projects/AndroidAppMovie/app/src/main/res/layout/item_movie.xml" value="0.12360688956433637" />
+        <entry key="..\:/KBTU/4Sim/ADEV/Projects/AndroidAppMovie/app/src/main/res/layout/temp.xml" value="0.25416666666666665" />
+        <entry key="..\:/KBTU/4Sim/ADEV/Projects/AndroidAppMovie/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2595" />
+        <entry key="..\:/KBTU/4Sim/Moviefy/Moviefy/app/src/main/res/layout/activity_movie_details.xml" value="0.11302083333333333" />
+        <entry key="..\:/KBTU/4Sim/Moviefy/Moviefy/app/src/main/res/layout/item_movie.xml" value="0.11302083333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
