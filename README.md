@@ -39,7 +39,7 @@
   
   
   This project made at Android Devolopment at KBTU, Spring 2022.
-  Project: Simple Movie base from TMDB API with minimal features. 
+  Project: Simple Movie base from TMDB API with minimal features and MVP structure. 
   You can get Popular, Top rated, Upcoming movies, also you can add them to your favorites.
   LIBS: GSON, Retrofit, Glide, Room
   
