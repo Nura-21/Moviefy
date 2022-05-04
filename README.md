@@ -21,10 +21,7 @@
   
   
   <p align="center"> Android-Spring-2022: <strong>Project of Movie base.</strong>
-<br />
-    
-    Screenshot_1
-    
+<br /> 
     
 <div align="center">
     <div align="center">
