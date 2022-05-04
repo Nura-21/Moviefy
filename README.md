@@ -31,7 +31,6 @@
       <img src="images/Screenshot_0.png" alt="Logo" width="32%">
         <img src="images/Screenshot_1.png" alt="Logo" width="32%">
         <img src="images/Screenshot_2.png" alt="Logo" width="32%">
-        
     </div>
     <div align="center">
       <img src="images/Screenshot_3.png" alt="Logo" width="32%">
