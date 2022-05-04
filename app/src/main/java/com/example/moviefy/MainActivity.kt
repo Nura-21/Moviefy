@@ -6,7 +6,13 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.moviefy.database.AppDatabase
+import com.example.moviefy.model.data.MoviesRepository
+import com.example.moviefy.model.data.local.AppDatabase
+import com.example.moviefy.model.Movie
+import com.example.moviefy.presenter.*
+import com.example.moviefy.presenter.MovieDetailsActivity
+import com.example.moviefy.view.FilmAdapter
+import com.example.moviefy.view.MoviesAdapter
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,9 +1,9 @@
-package com.example.moviefy.database
+package com.example.moviefy.model.data.local
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.moviefy.Movie
+import com.example.moviefy.model.Movie
 
 @Database(
     entities = [Movie::class],

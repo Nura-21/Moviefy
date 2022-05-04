@@ -1,4 +1,5 @@
-package com.example.moviefy
+package com.example.moviefy.model.data.remote
+import com.example.moviefy.model.GetMoviesResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

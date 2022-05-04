@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.example.moviefy.MovieDetailsActivity">
+            android:name="com.example.moviefy.presenter.MovieDetailsActivity">
         </activity>
         <activity android:name="com.example.moviefy.MainActivity"
             android:exported="true">

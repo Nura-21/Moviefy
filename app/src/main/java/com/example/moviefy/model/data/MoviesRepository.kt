@@ -1,4 +1,7 @@
-package com.example.moviefy
+package com.example.moviefy.model.data
+import com.example.moviefy.model.data.remote.Api
+import com.example.moviefy.model.GetMoviesResponse
+import com.example.moviefy.model.Movie
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

@@ -1,11 +1,14 @@
-package com.example.moviefy
+package com.example.moviefy.presenter
 import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
-import com.example.moviefy.database.AppDatabase
+import com.example.moviefy.R
+import com.example.moviefy.model.data.local.AppDatabase
+import com.example.moviefy.model.Movie
+
 const val ID = 0L
 const val MOVIE_BACKDROP = "extra_movie_backdrop"
 const val MOVIE_POSTER = "extra_movie_poster"

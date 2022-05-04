@@ -1,6 +1,6 @@
-package com.example.moviefy.database
+package com.example.moviefy.model.data.local
 import androidx.room.*
-import com.example.moviefy.Movie
+import com.example.moviefy.model.Movie
 
 @Dao
 interface DAO{

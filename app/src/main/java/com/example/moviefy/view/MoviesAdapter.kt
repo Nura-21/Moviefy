@@ -1,4 +1,4 @@
-package com.example.moviefy
+package com.example.moviefy.view
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,8 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.example.moviefy.R
+import com.example.moviefy.model.Movie
 
 class MoviesAdapter(
     private var movies: MutableList<Movie>,

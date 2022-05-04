@@ -1,4 +1,5 @@
-package com.example.moviefy
+package com.example.moviefy.model
+import com.example.moviefy.model.Movie
 import com.google.gson.annotations.SerializedName
 
 data class GetMoviesResponse(

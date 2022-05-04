@@ -1,4 +1,4 @@
-package com.example.moviefy
+package com.example.moviefy.view
 import android.annotation.SuppressLint
 import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.example.moviefy.R
+import com.example.moviefy.model.Movie
 
 class FilmAdapter(
     private val onMovieClick: (movie: Movie) -> Unit
