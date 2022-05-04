@@ -1,5 +1,4 @@
 package com.example.moviefy
-
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
@@ -8,7 +7,6 @@ import com.google.gson.annotations.SerializedName
 data class Movie(
     @PrimaryKey
     @SerializedName("id") val id: Long,
-
     @SerializedName("title") val title: String,
     @SerializedName("overview") val overview: String,
     @SerializedName("poster_path") val posterPath: String,

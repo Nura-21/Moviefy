@@ -178,23 +178,6 @@ class MainActivity : AppCompatActivity() {
         attachUpcomingMoviesOnScrollListener()
     }
 
-
-//    private fun attachFavMoviesOnScrollListener() {
-//        favMovies.addOnScrollListener(object : RecyclerView.OnScrollListener() {
-//            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-//                val totalItemCount = favMoviesLayoutMgr.itemCount
-//                val visibleItemCount = favMoviesLayoutMgr.childCount
-//                val firstVisibleItem = favMoviesLayoutMgr.findFirstVisibleItemPosition()
-//
-//                if (firstVisibleItem + visibleItemCount >= totalItemCount / 2) {
-//                    favMovies.removeOnScrollListener(this)
-//                    favMoviesPage++
-//                    getUpcomingMovies()
-//                }
-//            }
-//        })
-//    }
-
     private fun setAdapter(){
         favMoviesAdapter.setOnClickListener {
             showMovieDetails(it)

@@ -1,5 +1,4 @@
 package com.example.moviefy
-
 import com.google.gson.annotations.SerializedName
 
 data class GetMoviesResponse(

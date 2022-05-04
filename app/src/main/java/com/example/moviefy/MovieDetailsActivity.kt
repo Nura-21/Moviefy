@@ -1,5 +1,4 @@
 package com.example.moviefy
-
 import android.os.Bundle
 import android.view.View
 import android.widget.*
@@ -7,12 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.example.moviefy.database.AppDatabase
-
-import java.net.IDN
-
-//import com.example.moviefy.database.film
-
-
 const val ID = 0L
 const val MOVIE_BACKDROP = "extra_movie_backdrop"
 const val MOVIE_POSTER = "extra_movie_poster"
@@ -31,7 +24,7 @@ class MovieDetailsActivity : AppCompatActivity() {
     private lateinit var overview: TextView
     private lateinit var add: Button
     private lateinit var delete: Button
-    lateinit var movie : Movie
+    lateinit var movie: Movie
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movie_details)
@@ -46,38 +39,25 @@ class MovieDetailsActivity : AppCompatActivity() {
         add = findViewById(R.id.add)
         delete = findViewById(R.id.delete)
 
-
         val extras = intent.extras
-
 
         if (extras != null) {
             populateDetails(extras)
-
-        }else{
+        } else {
             finish()
         }
-
-
         setListener()
-
-
     }
 
 
-    private fun setListener(){
-
+    private fun setListener() {
         add.setOnClickListener {
             insert(movie)
         }
-
         delete.setOnClickListener {
             delete(movie)
         }
     }
-
-
-
-
 
 
     private fun populateDetails(extras: Bundle) {
@@ -100,57 +80,61 @@ class MovieDetailsActivity : AppCompatActivity() {
         releaseDate.text = extras.getString(MOVIE_RELEASE_DATE, "")
         overview.text = extras.getString(MOVIE_OVERVIEW, "")
 
-        movie = Movie(extras.getLong(ID.toString(),0L), extras.getString(MOVIE_TITLE, ""), extras.getString(MOVIE_OVERVIEW, ""), extras.getString(MOVIE_POSTER).toString(), extras.getString(
-            MOVIE_BACKDROP).toString(),  extras.getFloat(MOVIE_RATING, 0f) / 2, extras.getString(MOVIE_RELEASE_DATE, ""))
+        movie = Movie(
+            extras.getLong(ID.toString(), 0L),
+            extras.getString(MOVIE_TITLE, ""),
+            extras.getString(MOVIE_OVERVIEW, ""),
+            extras.getString(MOVIE_POSTER).toString(),
+            extras.getString(
+                MOVIE_BACKDROP
+            ).toString(),
+            extras.getFloat(MOVIE_RATING, 0f) / 2,
+            extras.getString(MOVIE_RELEASE_DATE, "")
+        )
         checkButton(movie)
     }
 
-    private fun insert(movie: Movie){
+    private fun insert(movie: Movie) {
         val check = AppDatabase.getInstance(this).Dao().check(movie.id)
         val list = AppDatabase.getInstance(this).Dao().get()
-        if(check !in list){
+        if (check !in list) {
             val finished = AppDatabase.getInstance(this).Dao().insert(movie)
-            if(finished > 0){
+            if (finished > 0) {
                 Toast.makeText(this, "Insert Success", Toast.LENGTH_SHORT).show()
                 add.setBackgroundResource(R.drawable.faved)
                 delete.setBackgroundResource(R.drawable.delete)
-            }else{
+            } else {
                 Toast.makeText(this, "Insert Failed", Toast.LENGTH_SHORT).show()
             }
-        }else{
+        } else {
             Toast.makeText(this, "Already in list", Toast.LENGTH_SHORT).show()
-
         }
-
     }
 
-    private fun delete(movie: Movie){
+    private fun delete(movie: Movie) {
         val check = AppDatabase.getInstance(this).Dao().check(movie.id)
         val list = AppDatabase.getInstance(this).Dao().get()
-        if(check in list){
+        if (check in list) {
             val finished = AppDatabase.getInstance(this).Dao().delete(movie)
-            if(finished > 0){
+            if (finished > 0) {
                 Toast.makeText(this, "Deleted Success", Toast.LENGTH_SHORT).show()
                 finish()
-            }else{
+            } else {
                 Toast.makeText(this, "Deleted Failed", Toast.LENGTH_SHORT).show()
             }
-        }else{
+        } else {
             Toast.makeText(this, "Not in the list", Toast.LENGTH_SHORT).show()
-
         }
     }
 
-    private fun checkButton(movie : Movie){
+    private fun checkButton(movie: Movie) {
         val check = AppDatabase.getInstance(this).Dao().check(movie.id)
         val list = AppDatabase.getInstance(this).Dao().get()
-        if(check in list){
+        if (check in list) {
             add.setBackgroundResource(R.drawable.faved)
             delete.setBackgroundResource(R.drawable.delete)
-        }else{
+        } else {
             delete.visibility = View.GONE
         }
     }
-
-
 }
